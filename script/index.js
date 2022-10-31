@@ -43,7 +43,7 @@ inicioSesion();
 function inicioSesion() {
     let ingreso = false;
     do {
-        let documento = parseInt( prompt( 'Ingrese el número de documento  :' ) );
+        let documento = parseInt( prompt( 'Ingrese el número de documento:' ) );
         let pass = prompt( 'Ingrese la contraseña:' );
         
         if( documento == users[0].numDocumento && pass == users[0].password ) {
@@ -173,11 +173,11 @@ function validacionDinero() {
             })
             let totalRetirado = (billetes100*100000) + (billetes50*50000) + (billetes20*20000) + (billetes10*10000) + (billetes5*5000)
             console.log(`--Total retirado: $${totalRetirado}--`);
-            console.log(`Se quedó debiendo: ${dineroSolicitado}`)
+            console.log(`--Se quedó debiendo: $${dineroSolicitado}--`)
             imprimirDinero();
             inicioSesion();
             } else {
-                console.log(`No tengo el dinero solicitado ${dineroSolicitado}, solo hay ${total}`);
+                console.log(`No tengo el dinero solicitado $${dineroSolicitado}.`);
                 inicioSesion();
             }
             
