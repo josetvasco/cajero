@@ -43,7 +43,7 @@ inicioSesion();
 function inicioSesion() {
     let ingreso = false;
     do {
-        let documento = parseInt( prompt( 'Ingrese el número de documento:' ) );
+        let documento = parseInt( prompt( 'Ingrese el número de documento  :' ) );
         let pass = prompt( 'Ingrese la contraseña:' );
         
         if( documento == users[0].numDocumento && pass == users[0].password ) {
